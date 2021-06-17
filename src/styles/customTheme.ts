@@ -2,13 +2,13 @@ import { theme, extendTheme } from "@chakra-ui/react";
 
 const customTheme = extendTheme({
   config: {
-    initialColorMode: "light",
+    initialColorMode: "dark",
     useSystemColorMode: false,
   },
   fonts: {
     ...theme.fonts,
-    body: "Lexend, sans-serif",
-    heading: "Lexend, serif",
+    body: "Space Mono, serif",
+    heading: "Space Grotesk, serif",
   },
   colors: {
     ...theme.colors,

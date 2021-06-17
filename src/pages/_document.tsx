@@ -2,9 +2,8 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ColorModeScript } from "@chakra-ui/react";
 import customTheme from "styles/customTheme";
 
-const APP_NAME = "nextchakra-starter";
-const APP_DESCRIPTION =
-  "Next.js app template with Chakra-UI, TypeScript, and PWA configured";
+const APP_NAME = "sehyun.dev";
+const APP_DESCRIPTION = "sehyun's corner of the web";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {

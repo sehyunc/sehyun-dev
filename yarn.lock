@@ -2214,6 +2214,16 @@
   resolved "https://registry.yarnpkg.com/@fontsource/lexend/-/lexend-4.4.5.tgz#d4700cade416f9984923d4130507e0c8d1f30af2"
   integrity sha512-JRGHsXyso9V4dfTFbHIlFJTFhdmw00IIvF2SYZLfZEXDLEyStn4fRX7GajE+kKOVFv97EGFQ4YEeFbgCK1KEsA==
 
+"@fontsource/space-grotesk@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.4.5.tgz#1ebdddbd6b72562f03995853818a1945492a90d9"
+  integrity sha512-9gD8j+uxTggMdPStZi4SLjwWBpmKQteuP1NMtdegPzbbnfVsjzg4++w+KnpkRp2PMWECcGzyNkW8uNXqP+H6+w==
+
+"@fontsource/space-mono@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.4.5.tgz#2acc2f08c5060bc983bfbf14f8827770a5ce3c2a"
+  integrity sha512-QBU55UPj+JOzkwI/ezR1y1qBk+iJtYhjxBTHqXJMTrKCXIuWMD+NIXvVYHIJW8i6Aov+6kOksgVOqrU7rqOK8Q==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"

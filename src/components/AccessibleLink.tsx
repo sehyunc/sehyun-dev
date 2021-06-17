@@ -14,7 +14,15 @@ const AccessibleLink = ({
 }: AccessibleLinkProps) => {
   return (
     <Link href={href} as={as} passHref>
-      <ChakraLink isExternal={isExternal}>{children}</ChakraLink>
+      <ChakraLink
+        isExternal={isExternal}
+        style={{ textDecoration: "none" }}
+        _focus={{
+          outline: "none !important",
+        }}
+      >
+        {children}
+      </ChakraLink>
     </Link>
   );
 };

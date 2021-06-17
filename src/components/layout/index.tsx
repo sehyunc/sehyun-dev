@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Meta from "./Meta";
+import Navbar from "./Navbar";
 
 type LayoutProps = {
   children: ReactNode;
@@ -11,15 +12,10 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Box margin="0 auto" maxWidth={800} transition="0.5s ease-out">
+    <Box margin="0 auto" transition="0.5s ease-out" w="100%" h="100%" bg="#000">
       <Meta />
-      <Box margin="8">
-        <Header />
-        <Box as="main" marginY={22}>
-          {children}
-        </Box>
-        <Footer />
-      </Box>
+      <Navbar />
+      <Box as="main">{children}</Box>
     </Box>
   );
 };
