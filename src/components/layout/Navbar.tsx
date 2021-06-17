@@ -17,7 +17,7 @@ const Navbar = () => {
       bg="#000"
     >
       <Text>Sehyun</Text>
-      <IconButton icon={<FiMenu />} />
+      <IconButton icon={<FiMenu />} aria-label="menu" />
     </Flex>
   );
 };

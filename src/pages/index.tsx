@@ -29,7 +29,12 @@ const Home = () => {
       </Box>
       <Box w="100%" mx="auto" align="center" position="relative" my="100px">
         {PROJECTS.map(({ name, description, href }) => (
-          <ProjectCard name={name} description={description} href={href} />
+          <ProjectCard
+            name={name}
+            description={description}
+            href={href}
+            key="name"
+          />
         ))}
       </Box>
       <Box w="100%" mx="auto" position="relative" h="100px">
