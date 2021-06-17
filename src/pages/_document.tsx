@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { ColorModeScript } from "@chakra-ui/react";
+import customTheme from "styles/customTheme";
 
 const APP_NAME = "nextchakra-starter";
 const APP_DESCRIPTION =
@@ -36,6 +38,9 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
+          <ColorModeScript
+            initialColorMode={customTheme.config.initialColorMode}
+          />
           <Main />
           <NextScript />
         </body>
