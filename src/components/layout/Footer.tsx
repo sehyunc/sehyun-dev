@@ -19,16 +19,19 @@ const Footer = () => {
       </Flex>
       <HStack spacing="3" align="center" mr="10%">
         <AccessibleLink href="https://git.io/sehyun" isExternal>
-          <IconButton icon={<Icon as={RiGithubLine} />} />
+          <IconButton icon={<Icon as={RiGithubLine} />} aria-label="github" />
         </AccessibleLink>
         <AccessibleLink
           href="https://www.linkedin.com/in/sehyun-chung/"
           isExternal
         >
-          <IconButton icon={<Icon as={RiLinkedinLine} />} />
+          <IconButton
+            icon={<Icon as={RiLinkedinLine} />}
+            aria-label="linkedin"
+          />
         </AccessibleLink>
         <AccessibleLink href="https://twitter.com/sehyunchung" isExternal>
-          <IconButton icon={<Icon as={RiTwitterLine} />} />
+          <IconButton icon={<Icon as={RiTwitterLine} />} aria-label="twitter" />
         </AccessibleLink>
       </HStack>
     </Flex>
