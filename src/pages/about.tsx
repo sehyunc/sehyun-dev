@@ -6,8 +6,8 @@ const About = () => {
     <Container h="100%" pt="20%">
       <Heading mb={12}>About Me</Heading>
       <Text>
-        Hey there! I'm currently a junior at UC Berkeley pursuing a major in
-        Computer Science and a minor in Data Science.
+        Hey there! I&apos;m currently a junior at UC Berkeley pursuing a major
+        in Computer Science and a minor in Data Science.
       </Text>
       <br />
       <Text>
@@ -17,7 +17,7 @@ const About = () => {
       </Text>
       <br />
       <Text>
-        Here's my{" "}
+        Here&apos;s my{" "}
         <AccessibleLink
           href="https://drive.google.com/file/d/1RLTWrqqU7na55IWRoXhWLJZm13KPBxDH/view?usp=sharing"
           isExternal
