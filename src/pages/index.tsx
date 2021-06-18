@@ -1,6 +1,5 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 
 const PROJECTS = [
