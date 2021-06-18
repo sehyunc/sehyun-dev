@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/layout";
 import { ReactNode } from "react";
 
 import Header from "./Header";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import Meta from "./Meta";
 import Navbar from "./Navbar";
 
@@ -16,6 +16,9 @@ const Layout = ({ children }: LayoutProps) => {
       <Meta />
       <Navbar />
       <Box as="main">{children}</Box>
+      <Box w="100%" mx="auto" h="100px">
+        <Footer />
+      </Box>
     </Box>
   );
 };

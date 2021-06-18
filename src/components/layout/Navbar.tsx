@@ -9,7 +9,7 @@ const Navbar = () => {
       align="center"
       px="100px"
       zIndex="99999"
-      h="160px"
+      h="120px"
       w="100%"
       position="fixed"
       top="0"

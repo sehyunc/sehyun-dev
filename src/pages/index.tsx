@@ -37,9 +37,6 @@ const Home = () => {
           />
         ))}
       </Box>
-      <Box w="100%" mx="auto" position="relative" h="100px">
-        <Footer />
-      </Box>
     </>
   );
 };
