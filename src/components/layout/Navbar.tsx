@@ -10,6 +10,7 @@ import {
 import { useRouter } from "next/router";
 import React from "react";
 import { FiMenu } from "react-icons/fi";
+import AccessibleLink from "../AccessibleLink";
 
 const Navbar = () => {
   const router = useRouter();
@@ -26,7 +27,9 @@ const Navbar = () => {
       // left="0"
       bg="#000"
     >
-      <Text>Sehyun</Text>
+      <AccessibleLink href="/" decoration>
+        Sehyun
+      </AccessibleLink>
       <Menu>
         <MenuButton variant={"link"} cursor={"pointer"}>
           <IconButton icon={<FiMenu />} aria-label="menu" />

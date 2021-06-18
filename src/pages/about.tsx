@@ -1,9 +1,10 @@
-import { Text, Box, Container } from "@chakra-ui/react";
+import { Text, Box, Container, Heading } from "@chakra-ui/react";
 import AccessibleLink from "../components/AccessibleLink";
 
 const About = () => {
   return (
-    <Container h="100%" pt="200px">
+    <Container h="100%" pt="20%">
+      <Heading mb={12}>About Me</Heading>
       <Text>
         Hey there! I'm currently a junior at UC Berkeley pursuing a major in
         Computer Science and a minor in Data Science.
