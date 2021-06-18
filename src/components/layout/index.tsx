@@ -1,8 +1,7 @@
 import { Box } from "@chakra-ui/layout";
 import { ReactNode } from "react";
 
-import Header from "./Header";
-import Footer from "../Footer";
+import Footer from "./Footer";
 import Meta from "./Meta";
 import Navbar from "./Navbar";
 
@@ -12,11 +11,20 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Box margin="0 auto" transition="0.5s ease-out" w="100%" h="100%" bg="#000">
+    <Box margin="0 auto" transition="0.5s ease-out" w="100%" height="100vh">
       <Meta />
-      <Navbar />
+      <Box as="nav">
+        <Navbar />
+      </Box>
       <Box as="main">{children}</Box>
-      <Box w="100%" mx="auto" h="100px">
+      <Box
+        as="footer"
+        w="100%"
+        mx="auto"
+        h="100px"
+        position="absolute"
+        bottom="0"
+      >
         <Footer />
       </Box>
     </Box>

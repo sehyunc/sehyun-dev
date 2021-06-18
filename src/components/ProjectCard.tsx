@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ name, description, href }: ProjectCardProps) => {
   return (
-    <AccessibleLink href={href} isExternal={true}>
+    <AccessibleLink href={href} isExternal>
       <Flex
         textAlign="left"
         borderWidth="1px"

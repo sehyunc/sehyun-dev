@@ -5,6 +5,13 @@ const customTheme = extendTheme({
     initialColorMode: "dark",
     useSystemColorMode: false,
   },
+  styles: {
+    global: {
+      body: {
+        bg: "#000",
+      },
+    },
+  },
   fonts: {
     ...theme.fonts,
     body: "Space Mono, serif",

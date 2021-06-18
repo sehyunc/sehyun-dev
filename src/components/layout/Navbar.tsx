@@ -19,11 +19,11 @@ const Navbar = () => {
       align="center"
       px="100px"
       zIndex="99999"
-      h="120px"
+      h="90px"
       w="100%"
       position="fixed"
-      top="0"
-      left="0"
+      // top="0"
+      // left="0"
       bg="#000"
     >
       <Text>Sehyun</Text>
