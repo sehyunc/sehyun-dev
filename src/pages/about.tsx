@@ -3,7 +3,7 @@ import AccessibleLink from "../components/AccessibleLink";
 
 const About = () => {
   return (
-    <Container h="100%" pt="20%">
+    <Container h="100%" pt={{ base: "30%", sm: "30%", md: "20%", lg: "20%" }}>
       <Heading mb={12}>About Me</Heading>
       <Text>
         Hey there! I&apos;m currently a junior at UC Berkeley pursuing a major

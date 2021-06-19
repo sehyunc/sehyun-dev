@@ -20,7 +20,7 @@ const Navbar = () => {
       align="center"
       px={{ base: "10%", sm: "10%", md: "100px", lg: "100px" }}
       zIndex="99999"
-      h="90px"
+      h="10%"
       w="100%"
       position="fixed"
       // top="0"
