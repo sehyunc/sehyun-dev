@@ -18,7 +18,7 @@ const PROJECTS = [
     name: "Slingshot Mobile Waitlist",
     description:
       "Dashboard to view rank, prizes, and more for Slingshot's mobile waitlist program (2 million+ users)",
-    href: "https://app.slingshot.finance/nfts",
+    href: "https://waitlist.slingshot.finance/V240BWLME5RW",
   },
   {
     name: "uni.vote",
@@ -74,11 +74,6 @@ const PROJECTS = [
     name: "Relentlo",
     description: "Revolutionizing brand and ad experiences in games",
     href: "https://relentlo.com/home",
-  },
-  {
-    name: "Calypso Finance",
-    description: "Next generation loans",
-    href: "https://calypsofi.com/",
   },
 ];
 
