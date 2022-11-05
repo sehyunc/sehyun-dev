@@ -26,7 +26,7 @@ const Footer = () => {
     >
       <Flex ml={{ base: "0", sm: "0", md: "10%", lg: "10%" }}>
         <Text color="#8f9ba8">
-          © 2021 — Built with{" "}
+          © 2022 — Built with{" "}
           <Text as="span" color="white">
             Next
           </Text>{" "}
@@ -42,6 +42,9 @@ const Footer = () => {
         mr={{ base: "0", sm: "0", md: "10%", lg: "10%" }}
         mt={{ base: 6, sm: 6, md: "0", lg: "0" }}
       >
+        <AccessibleLink href="https://twitter.com/sehyunchung" isExternal>
+          <IconButton icon={<Icon as={RiTwitterLine} />} aria-label="twitter" />
+        </AccessibleLink>
         <AccessibleLink href="https://git.io/sehyun" isExternal>
           <IconButton icon={<Icon as={RiGithubLine} />} aria-label="github" />
         </AccessibleLink>
@@ -53,9 +56,6 @@ const Footer = () => {
             icon={<Icon as={RiLinkedinLine} />}
             aria-label="linkedin"
           />
-        </AccessibleLink>
-        <AccessibleLink href="https://twitter.com/sehyunchung" isExternal>
-          <IconButton icon={<Icon as={RiTwitterLine} />} aria-label="twitter" />
         </AccessibleLink>
       </HStack>
     </Flex>

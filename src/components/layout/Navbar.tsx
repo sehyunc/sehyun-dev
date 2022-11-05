@@ -1,5 +1,7 @@
 import {
+  Box,
   Flex,
+  Heading,
   IconButton,
   Menu,
   MenuButton,
@@ -28,7 +30,12 @@ const Navbar = () => {
       bg="#000"
     >
       <AccessibleLink href="/" decoration>
-        Sehyun
+        <Flex alignItems="center" flexDirection="row">
+          sehyun
+          <Heading fontSize="30px" lineHeight="55px" fontWeight="400" ml="6px">
+            ✌︎
+          </Heading>
+        </Flex>
       </AccessibleLink>
       <Menu>
         <MenuButton variant={"link"} cursor={"pointer"}>
@@ -36,10 +43,34 @@ const Navbar = () => {
         </MenuButton>
         <MenuList bg="#db3933">
           <MenuItem onClick={() => router.push("/")} bg="none">
-            Home
+            home
           </MenuItem>
           <MenuItem onClick={() => router.push("/about")} bg="none">
-            About Me
+            about me
+          </MenuItem>
+          <MenuItem
+            as="a"
+            bg="none"
+            href="https://twitter.com/sehyunchung"
+            rel="noopener noreferrer"
+          >
+            twitter
+          </MenuItem>
+          <MenuItem
+            as="a"
+            bg="none"
+            href="https://git.io/sehyun"
+            rel="noopener noreferrer"
+          >
+            github
+          </MenuItem>
+          <MenuItem
+            as="a"
+            bg="none"
+            href="https://www.linkedin.com/in/sehyun-chung/"
+            rel="noopener noreferrer"
+          >
+            linkedin
           </MenuItem>
         </MenuList>
       </Menu>
