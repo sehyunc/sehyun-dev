@@ -15,11 +15,10 @@ const ProjectCard = ({ name, description, href }: ProjectCardProps) => {
         textAlign="left"
         borderWidth="1px"
         borderColor="#16181A"
-        h="200px"
-        w="90%"
         align="center"
         justify="space-between"
-        px="80px"
+        px="72px"
+        py="48px"
         _hover={{
           transition: "all .6s ease",
           borderColor: "#8F9BA8",

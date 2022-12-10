@@ -17,7 +17,7 @@ const PROJECTS = [
   {
     name: "Slingshot Mobile Waitlist",
     description:
-      "Dashboard to view rank, prizes, and more for Slingshot's mobile waitlist program (2 million+ users)",
+      "Dashboard for Slingshot's mobile waitlist program (2 million+ users)",
     href: "https://waitlist.slingshot.finance/V240BWLME5RW",
   },
   {
