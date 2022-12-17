@@ -18,7 +18,7 @@ const AccessibleLink = ({
     <Link href={href} as={as} passHref>
       <ChakraLink
         isExternal={isExternal}
-        style={decoration ? {} : { textDecoration: "none" }}
+        style={{ textDecoration: decoration ? "" : "none" }}
         _focus={
           decoration
             ? {}

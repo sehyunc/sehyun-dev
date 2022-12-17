@@ -1,30 +1,25 @@
 import {
+  Container,
   Flex,
   HStack,
   Icon,
   IconButton,
   Text,
-  useBreakpoint,
 } from "@chakra-ui/react";
 import { RiGithubLine, RiLinkedinLine, RiTwitterLine } from "react-icons/ri";
 import AccessibleLink from "../AccessibleLink";
 
 const Footer = () => {
-  const b = useBreakpoint();
-  console.log("🚀 ~ file: Footer.tsx ~ line 7 ~ Footer ~ b", b);
   return (
-    <Flex
+    <Container
+      as={Flex}
+      maxWidth="6xl"
+      justify="space-between"
       align="center"
-      justify={{
-        base: "space-between",
-        sm: "center",
-        md: "space-between",
-        lg: "space-between",
-      }}
-      w="100%"
-      direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
+      mt="24px"
+      height="55px"
     >
-      <Flex ml={{ base: "0", sm: "0", md: "10%", lg: "10%" }}>
+      <Flex>
         <Text color="#8f9ba8">
           © 2022 — Built with{" "}
           <Text as="span" color="white">
@@ -36,12 +31,7 @@ const Footer = () => {
           </Text>
         </Text>
       </Flex>
-      <HStack
-        spacing="3"
-        align="center"
-        mr={{ base: "0", sm: "0", md: "10%", lg: "10%" }}
-        mt={{ base: 6, sm: 6, md: "0", lg: "0" }}
-      >
+      <HStack spacing="3" align="center">
         <AccessibleLink href="https://twitter.com/sehyunchung" isExternal>
           <IconButton icon={<Icon as={RiTwitterLine} />} aria-label="twitter" />
         </AccessibleLink>
@@ -58,7 +48,7 @@ const Footer = () => {
           />
         </AccessibleLink>
       </HStack>
-    </Flex>
+    </Container>
   );
 };
 

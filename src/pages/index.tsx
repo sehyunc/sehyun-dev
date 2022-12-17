@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
 
@@ -83,7 +83,8 @@ const Home = () => {
       <Box position="relative" w="100%" h="100vh">
         <Hero />
       </Box>
-      <Box w="100%" mx="auto" align="center" position="relative" my="100px">
+      {/* <Box w="100%" mx="auto" align="center" position="relative" my="100px"> */}
+      <Container maxWidth="6xl">
         {PROJECTS.map(({ name, description, href }) => (
           <ProjectCard
             name={name}
@@ -92,7 +93,8 @@ const Home = () => {
             key="name"
           />
         ))}
-      </Box>
+      </Container>
+      {/* </Box> */}
     </>
   );
 };

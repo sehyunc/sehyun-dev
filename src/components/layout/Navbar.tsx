@@ -1,5 +1,5 @@
 import {
-  Box,
+  Container,
   Flex,
   Heading,
   IconButton,
@@ -7,36 +7,44 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  Text,
+  Spacer,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import AccessibleLink from "../AccessibleLink";
 
 const Navbar = () => {
+  const [underline, setUnderline] = useState(false);
   const router = useRouter();
   return (
-    <Flex
+    <Container
+      as={Flex}
+      maxWidth="6xl"
       justify="space-between"
       align="center"
-      px={{ base: "10%", sm: "10%", md: "100px", lg: "100px" }}
-      zIndex="99999"
-      h="10%"
-      w="100%"
-      position="fixed"
-      // top="0"
-      // left="0"
-      bg="#000"
+      mt="24px"
+      height="55px"
     >
-      <AccessibleLink href="/" decoration>
-        <Flex alignItems="center" flexDirection="row">
-          sehyun
-          <Heading fontSize="30px" lineHeight="55px" fontWeight="400" ml="6px">
-            ✌︎
-          </Heading>
-        </Flex>
-      </AccessibleLink>
+      <div
+        onMouseOver={() => setUnderline(true)}
+        onMouseOut={() => setUnderline(false)}
+        style={{ borderBottom: underline ? "1px solid #fff" : "" }}
+      >
+        <AccessibleLink href="/">
+          <Flex alignItems="center" flexDirection="row">
+            sehyun
+            <Heading
+              fontSize="30px"
+              lineHeight="55px"
+              fontWeight="400"
+              ml="6px"
+            >
+              ✌︎
+            </Heading>
+          </Flex>
+        </AccessibleLink>
+      </div>
       <Menu>
         <MenuButton variant={"link"} cursor={"pointer"}>
           <IconButton icon={<FiMenu />} aria-label="menu" />
@@ -74,7 +82,7 @@ const Navbar = () => {
           </MenuItem>
         </MenuList>
       </Menu>
-    </Flex>
+    </Container>
   );
 };
 

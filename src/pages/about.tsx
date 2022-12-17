@@ -1,12 +1,8 @@
-import { Text, Box, Container, Heading } from "@chakra-ui/react";
-import AccessibleLink from "../components/AccessibleLink";
+import { Container, Heading, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Container
-      height="100%"
-      pt={{ base: "30%", sm: "30%", md: "10%", lg: "10%" }}
-    >
+    <Container pt={{ base: "30%", sm: "30%", md: "10%", lg: "10%" }}>
       <Heading mb={12}>About Me</Heading>
       <Text>Hey there! I&apos;m Sehyun.</Text>
       <br />
